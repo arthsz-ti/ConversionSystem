@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversao.Page.MtForCm"
+             Title="MtForCm">
+    <VerticalStackLayout Spacing="20"
+                         Padding="20">
+
+        <Label 
+            Text=":: Conversor de Metros para Centímetros ::"
+            FontAttributes="Bold"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Digite o número de metros para converter:" />
+
+        <Entry x:Name="etrMtToCm"
+               Keyboard="Numeric" />
+
+        <Button x:Name="btnCalcular"
+                Text="Calcular Conversão"
+                Clicked="btnCalcular_Clicked" />
+
+        <Label x:Name="lblResultadoMt"
+               Text=""
+               FontSize="18"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

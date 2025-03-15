@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversao.Page.Sobre"
+             Title="Sobre">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <Label Text="Sobre o Aplicativo"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Sobre o Aluno"
+                   FontAttributes="Bold"
+                   FontSize="18" />
+            <Label Text="Meu nome é Arthur Saraiva de Souza, tenho 19 anos e estou no 3º semestre do curso de Ciências da Computação. Atualmente, estou estagiando na área de TI na Continental Automotive." />
+
+            <Label Text="Sobre o Aplicativo"
+                   FontAttributes="Bold"
+                   FontSize="18" />
+            <Label Text="Este aplicativo foi desenvolvido como parte de uma atividade solicitada pelo professor Juliano Marçal da disciplina de Desenvolvimento Mobile Android. O objetivo foi criar um conversor de unidades." />
+
+            <Label Text="Sobre a Disciplina/Projeto"
+                   FontAttributes="Bold"
+                   FontSize="18" />
+            <Label Text="A disciplina de Desenvolvimento Mobile Android, ministrada pelo professor Juliano Marçal. Este projeto foi desenvolvido como parte de uma atividade prática, solicitada no dia 13 de março, e visa colocar em prática os conceitos aprendidos em sala de aula." />
+
+            <Label Text="O aplicativo foi desenvolvido utilizando o .NET MAUI, que permite criar aplicativos móveis de forma multiplataforma,facilitando o aprendizado e a experiência de desenvolvimento." />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

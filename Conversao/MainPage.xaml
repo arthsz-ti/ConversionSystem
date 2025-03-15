@@ -1,0 +1,39 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversao.MainPage"
+             NavigationPage.HasNavigationBar="True">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Image Source="dotnet_bot.png"
+                   HeightRequest="185"
+                   Aspect="AspectFit"
+                   SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label Text="Selecione a opção desejada:"
+                   Style="{StaticResource Headline}"
+                   SemanticProperties.HeadingLevel="Level1" />
+
+            <Button x:Name="KmForMt"
+                    Text="Kilômetros Para Metros"
+                    BackgroundColor="LightGray"
+                    Clicked="KmToMt_Clicked"/>
+
+            <Button x:Name="HecToMt"
+                    Text="Hectômetros para Metros"
+                    BackgroundColor="LightGray"
+                    Clicked="HecToMt_Clicked"/>
+
+            <Button x:Name="MtToCm"
+                    Text="Metros para Centímetros"
+                    BackgroundColor="LightGray"
+                    Clicked="MtToCm_Clicked"/>
+
+            <Button x:Name="SobreAluno"
+                    Text="Sobre"
+                    BackgroundColor="LightGray"
+                    Clicked="Sobre_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
