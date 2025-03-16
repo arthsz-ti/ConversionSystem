@@ -7,7 +7,7 @@
                          Padding="20">
 
         <Label 
-            Text=":: Conversor de Metros para Centímetros ::"
+            Text="Conversor de Metros para Centímetros"
             FontAttributes="Bold"
             FontSize="20"
             VerticalOptions="Center" 

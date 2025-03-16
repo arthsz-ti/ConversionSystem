@@ -8,7 +8,7 @@
                          Padding="20">
 
         <Label 
-            Text=" Conversor de Hectômetros para Metros "
+            Text="Conversor de Hectômetros para Metros"
             FontAttributes="Bold"
             FontSize="20"
             VerticalOptions="Center" 
