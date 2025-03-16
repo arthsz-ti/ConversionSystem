@@ -5,43 +5,57 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Conversao"
     Shell.FlyoutBehavior="Flyout"
-    Shell.TabBarIsVisible="False"
-    
+    Shell.TabBarIsVisible="True"
+    Shell.TabBarBackgroundColor="LightGray"
     Title="Conversao">
 
     <FlyoutItem Title="Conversao"
                 FlyoutDisplayOptions="AsMultipleItems">
-       
         <ShellContent
-        Title="Sistema de Conversão"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" 
-        Icon="dotnet_bot.png"/>
+            Title="Sistema de Conversão"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" 
+            Icon="dotnet_bot.png"/>
 
         <ShellContent
-        Title="KILOMETROS > METROS"
-        ContentTemplate="{DataTemplate local:Page.KmForMt}"
-        Route="Km > Mt"
-        Icon="dotnet_bot.png"/>
+            Title="KILOMETROS > METROS"
+            ContentTemplate="{DataTemplate local:Page.KmForMt}"
+            Route="Km > Mt"
+            Icon="dotnet_bot.png"/>
 
         <ShellContent
-        Title="HECTOMETROS > METROS"
-        ContentTemplate="{DataTemplate local:Page.HecForMt}"
-        Route="HEC > MT"
-        Icon="dotnet_bot.png"/>
+            Title="HECTOMETROS > METROS"
+            ContentTemplate="{DataTemplate local:Page.HecForMt}"
+            Route="HEC > MT"
+            Icon="dotnet_bot.png"/>
 
         <ShellContent
-        Title="METROS > CENTIMETROS"
-        ContentTemplate="{DataTemplate local:Page.MtForCm}"
-        Route="MT > CM"
-        Icon="dotnet_bot.png"/>
+            Title="METROS > CENTIMETROS"
+            ContentTemplate="{DataTemplate local:Page.MtForCm}"
+            Route="MT > CM"
+            Icon="dotnet_bot.png"/>
 
         <ShellContent
-        Title="Sobre"
-        ContentTemplate="{DataTemplate local:Page.Sobre}"
-        Route="Sobre"
-        Icon="dotnet_bot.png"/>
-
+            Title="Sobre"
+            ContentTemplate="{DataTemplate local:Page.Sobre}"
+            Route="Sobre"
+            Icon="dotnet_bot.png"/>
     </FlyoutItem>
 
+    <TabBar>
+        <Tab Title="Conversao" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Title="Kilometros" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Page.KmForMt}" />
+        </Tab>
+        <Tab Title="Hectometros" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Page.HecForMt}" />
+        </Tab>
+        <Tab Title="Metros" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Page.MtForCm}" />
+        </Tab>
+    </TabBar>
+
 </Shell>
+

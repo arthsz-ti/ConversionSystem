@@ -8,7 +8,7 @@
                          Padding="20">
 
         <Label 
-            Text=":: Conversor de Quilômetros para Metros ::"
+            Text="Conversor de Quilômetros para Metros"
             FontAttributes="Bold"
             FontSize="20"
             VerticalOptions="Center" 
